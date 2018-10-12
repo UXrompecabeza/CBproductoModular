@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>button-plus-linear</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="**Mobile-FINAL" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MM_002" transform="translate(-150.000000, -596.000000)" fill="#1779C8" fill-rule="nonzero">
+            <g id="button-plus-linear" transform="translate(150.000000, 596.000000)">
+                <path d="M10.75,9.25 L14.25,9.25 C14.6642136,9.25 15,9.5857864 15,10 C15,10.4142136 14.6642136,10.75 14.25,10.75 L10.75,10.75 L10.75,14.25 C10.75,14.6642136 10.4142136,15 10,15 C9.5857864,15 9.25,14.6642136 9.25,14.25 L9.25,10.75 L5.75,10.75 C5.33578644,10.75 5,10.4142136 5,10 C5,9.5857864 5.33578644,9.25 5.75,9.25 L9.25,9.25 L9.25,5.75 C9.25,5.33578644 9.5857864,5 10,5 C10.4142136,5 10.75,5.33578644 10.75,5.75 L10.75,9.25 Z M10,0 C4.48625,0 0,4.48625 0,10 C0,15.51375 4.48625,20 10,20 C15.51375,20 20,15.51375 20,10 C20,4.48625 15.51375,0 10,0 Z M10,19 C5.03791881,19 1,14.9620812 1,10 C1,5.03791881 5.03791881,1 10,1 C14.9620812,1 19,5.03791881 19,10 C19,14.9620812 14.9620812,19 10,19 Z" id="path-1"></path>
+            </g>
+        </g>
+    </g>
+</svg>
