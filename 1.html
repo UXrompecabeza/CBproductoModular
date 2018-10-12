@@ -1,0 +1,1582 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no user-scalable=0">
+    <link rel="shortcut icon" href="./assets/img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./assets/img/favicon/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link href="./css/magnific-popup.css" rel="stylesheet">
+    <link href="./css/skeleton.css" rel="stylesheet">
+    <link href="./css/jquery-ui.min.css" rel="stylesheet">
+    <link href="./css/libs/animate.min.css" rel="stylesheet">
+    <link href="./css/jquery-ui.theme.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/stylesOn.css">
+    <title>Simulación Cruz Blanca</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1><a href="home.html" title="Cruz Blanca"><img src="./assets/img/logo-CB.png"></a></h1>
+        <nav>
+          <ul>
+            <li><a title="Resumen" href="home.html">Resumen</a></li>
+            <li><a title="Referidos Propios" href="referidos-propios.html">Referidos Propios</a></li>
+            <li><a title="Campaña Ex Clientes" href="referidos-propios.html">Campaña Ex Clientes</a>
+              <ul>
+                <li><a title="Ex Clientes 1" href="#">Ex Clientes 1</a></li>
+                <li><a title="Ex Clientes 2" href="#">Ex Clientes 2</a></li>
+              </ul>
+            </li>
+            <li class="active"><a title="Campaña Referidos" href="index.html">Campaña Referidos</a></li>
+            <li><a title="Mi Maletin" href="#">Mi Maletin</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="pasoUno">
+        <div class="container">
+          <div class="row">
+            <ol class="breadcrumb">
+              <li>Estás en: </li>
+              <li> Buscador de Plan</li>
+              <li><span>Simular</span></li>
+            </ol>
+            <div class="contactenos"><a href="#!" data-toggle="modal" data-target="#exampleModal2"><img src="./assets/img/icon-phone.svg"><span>Quiero que me contacten</span></a></div>
+          </div>
+          <div class="head-title">
+            <h2>Simula Tu Plan</h2>
+          </div>
+          <div class="steps-wizard">
+            <!-- pasos-->
+            <div class="row">
+              <div class="three columns steps active">
+                <div class="step-content">
+                  <div class="text-center step-num"><span>1</span></div>
+                  <div class="progress">
+                    <div class="progress-bar"></div>
+                  </div>
+                  <div class="step-info text-center">Mis Datos Personales</div>
+                </div>
+              </div>
+              <div class="three columns steps active">
+                <div class="step-content">
+                  <div class="text-center step-num"><span>2</span></div>
+                  <div class="progress">
+                    <div class="progress-bar"></div>
+                  </div>
+                  <div class="step-info text-center">Mis Preferencias</div>
+                </div>
+              </div>
+              <div class="three columns steps">
+                <div class="step-content">
+                  <div class="text-center step-num"><span>3</span></div>
+                  <div class="progress">
+                    <div class="progress-bar"></div>
+                  </div>
+                  <div class="step-info text-center">Resultado</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tabsOn">
+            <ul class="nav nav-pills justify-content-center" role="tablist">
+              <li class="nav-item"><a class="nav-link nav-tradicional" id="plan-tradicional-tab" data-toggle="pill" href="#plan-tradicional" role="tab" aria-controls="plan-tradicional" aria-selected="false"> <img src="assets/iconsOn/icon_planestradicionales.svg" alt=""><span>PLANES TRADICIONALES</span></a></li>
+              <li class="nav-item"><a class="nav-link nav-digital active" id="plan-digital-tab" data-toggle="pill" href="#plan-digital" role="tab" aria-controls="plan-digital" aria-selected="true" onclick="scrolling(this)"> <img src="assets/iconsOn/icon_ON.svg" alt=""><span>ARMA TU PLAN DIGITAL</span></a></li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade" id="plan-tradicional" role="tabpanel" aria-labelledby="plan-tradicional-tab">
+                <div class="col-md-12">
+                  <p class="text-center"><strong>Esteban,</strong> Ingresa tus clínicas de preferencia y beneficiarios como carga</p>
+                  <div class="title-step">
+                    <h3 class="hidden-lg"><span>2</span> Mis preferencias</h3>
+                  </div>
+                </div>
+                <form>
+                  <div class="form-row">
+                    <div class="form-group col-md-4">
+                      <label>¿Tienes una clínica de preferencia? <a class="red-tooltip" href="#!" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Tooltip on bottom"><i class="far fa-question-circle"></i></a></label>
+                      <div class="mobile-radio">
+                        <input id="cob-norm" type="radio" name="clinic" value="ClinicasSi">
+                        <label for="cob-norm">Si</label>
+                      </div>
+                      <div class="mobile-radio">
+                        <input id="cob-redu" type="radio" name="clinic" value="ClinicasNo">
+                        <label for="cob-redu">No</label>
+                      </div>
+                      <div class="clinicas">
+                        <label class="my-1 mr-2 mt-5 hidden-xs" for="inlineFormCustomSelectPref">Clínica 1</label>
+                        <div class="select-style hidden-xs">
+                          <select id="inlineFormCustomSelectPref" disabled="">
+                            <option selected="">Selecciona una región</option>
+                            <option value="1">...</option>
+                            <option value="2">...</option>
+                            <option value="3">...</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="clinicas">
+                        <label class="my-1 mr-2 mt-4 hidden-xs" for="inlineFormCustomSelectPref">Clínica 2</label>
+                        <div class="select-style hidden-xs">
+                          <select id="inlineFormCustomSelectPref" disabled="">
+                            <option selected="">Selecciona una región</option>
+                            <option value="1">...</option>
+                            <option value="2">...</option>
+                            <option value="3">...</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group col-md-8">
+                      <div class="title-step">
+                        <h3>Beneficiarios de mi plan</h3>
+                      </div>
+                      <div class="responsive-tbl">
+                        <table class="table tbl-small">
+                          <tbody>
+                            <tr>
+                              <th>Género</th>
+                              <th>Edad</th>
+                              <th>Relación</th>
+                              <th>Tipo</th>
+                              <th></th>
+                              <th></th>
+                            </tr>
+                            <tr>
+                              <td>Masculino</td>
+                              <td>23</td>
+                              <td>Cotizante</td>
+                              <td>-</td>
+                              <td><a href="#!" title="Editar"><i class="icon icon-edit"></i></a></td>
+                              <td><a href="#!" title="Eliminar"><i class="icon icon-delete"></i></a></td>
+                            </tr>
+                          </tbody>
+                          <tfoot>
+                            <tr>
+                              <td class="foottab" colspan="6"><a href="#!" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-plus-circle"></i>Agregar Beneficiarios como carga</a></td>
+                            </tr>
+                          </tfoot>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-row enviar">
+                    <!-- <div class="offset-md-4"></div>-->
+                    <div class="contenerFoot"><a class="button button-info" href="paso1.html"><span>Volver</span></a><a class="button button-primary" href="paso3.html"><span>Ver resultado</span></a></div>
+                  </div>
+                </form>
+              </div>
+              <div class="tab-pane fade show active" id="plan-digital" role="tabpanel" aria-labelledby="plan-digital-tab">
+                <div class="planDigital">
+                  <div class="leyendaBeneficios">
+                    <h2 class="bigTitleOn">Mundo de beneficios CruzBlanca ON</h2>
+                    <h4>El primer plan de salud en Chile, para los que quieren soluciones digitales</h4>
+                    <div class="row no-margin">
+                      <div class="col-lg-4 no-padding"> 
+                        <div class="beneficioItem">
+                          <div class="imgBeneficio"><img src="assets/iconsOn/icon_video.svg"></div>
+                          <div class="textoBeneficio">
+                            <p data-toggle="tooltip" data-placement="top" title="Obtén la tranquilidad de contar con un doctor desde cualquier dispositivo, disponible sin reserva previa o mediante hora agendada">Video consultas <span class="hide-md hide-lg">médicas online</span></p>
+                            <p class="hide-sm">médicas online</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 no-padding">
+                        <div class="beneficioItem">
+                          <div class="imgBeneficio"><img src="assets/iconsOn/icon_bonoweb.svg"></div>
+                          <div class="textoBeneficio">
+                            <p data-toggle="tooltip" data-placement="top" title="Obtén la tranquilidad de contar con un doctor desde cualquier dispositivo, disponible sin reserva previa o mediante hora agendada">Bono <span class="hide-md hide-lg">Web</span></p>
+                            <p class="hide-sm">Web</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 no-padding"> 
+                        <div class="beneficioItem">
+                          <div class="imgBeneficio"><img src="assets/iconsOn/icon_examenes.svg"></div>
+                          <div class="textoBeneficio">
+                            <p data-toggle="tooltip" data-placement="top" title="Obtén la tranquilidad de contar con un doctor desde cualquier dispositivo, disponible sin reserva previa o mediante hora agendada">Exámenes <span class="hide-sm">con </span>toma <span class="hide-md hide-lg">de muestra a domicilio</span></p>
+                            <p class="hide-sm">de muestra a domicilio</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row hidenBenef">
+                      <div class="col-lg-4 no-padding">
+                        <div class="beneficioItem">
+                          <div class="imgBeneficio"><img src="assets/iconsOn/icon_callcenter.svg"></div>
+                          <div class="textoBeneficio">
+                            <p data-toggle="tooltip" data-placement="top" title="Obtén la tranquilidad de contar con un doctor desde cualquier dispositivo, disponible sin reserva previa o mediante hora agendada">Call Center <span class="hide-md hide-lg">especializado</span></p>
+                            <p class="hide-sm">especializado</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 no-padding">
+                        <div class="beneficioItem">
+                          <div class="imgBeneficio"><img src="assets/iconsOn/icon_reembolsoweb.svg"></div>
+                          <div class="textoBeneficio">
+                            <p data-toggle="tooltip" data-placement="top" title="Obtén la tranquilidad de contar con un doctor desde cualquier dispositivo, disponible sin reserva previa o mediante hora agendada">Reembolso <span class="hide-md hide-lg">Web</span></p>
+                            <p class="hide-sm">Web</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 no-padding">
+                        <div class="beneficioItem">
+                          <div class="imgBeneficio"><img src="assets/iconsOn/icon_kinesiologia.svg"></div>
+                          <div class="textoBeneficio">
+                            <p data-toggle="tooltip" data-placement="top" title="Obtén la tranquilidad de contar con un doctor desde cualquier dispositivo, disponible sin reserva previa o mediante hora agendada">Sesiones de kinesiología <span class="hide-md hide-lg">a domicilio</span></p>
+                            <p class="hide-sm">a domicilio</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 no-padding">
+                        <div class="beneficioItem">
+                          <div class="imgBeneficio"><img src="assets/iconsOn/icon_asesoria.svg"></div>
+                          <div class="textoBeneficio">
+                            <p data-toggle="tooltip" data-placement="top" title="Obtén la tranquilidad de contar con un doctor desde cualquier dispositivo, disponible sin reserva previa o mediante hora agendada">Asesoria digital <span class="hide-md hide-lg">por Whatsapp</span></p>
+                            <p class="hide-sm">por Whatsapp</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 no-padding">
+                        <div class="beneficioItem">
+                          <div class="imgBeneficio"><img src="assets/iconsOn/icon_modificarplan.svg"></div>
+                          <div class="textoBeneficio">
+                            <p data-toggle="tooltip" data-placement="top" title="Obtén la tranquilidad de contar con un doctor desde cualquier dispositivo, disponible sin reserva previa o mediante hora agendada">Modifica tu Plan <span class="hide-md hide-lg">de salud vía Web</span></p>
+                            <p class="hide-sm">de salud vía Web</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 no-padding">
+                        <div class="beneficioItem">
+                          <div class="imgBeneficio"><img src="assets/iconsOn/icon_certificado.svg"></div>
+                          <div class="textoBeneficio">
+                            <p data-toggle="tooltip" data-placement="top" title="Obtén la tranquilidad de contar con un doctor desde cualquier dispositivo, disponible sin reserva previa o mediante hora agendada">Certificados <span class="hide-md hide-lg">online</span></p>
+                            <p class="hide-sm">online</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="text-center hide-md hide-lg"><img class="btnBenef" src="assets/iconsOn/button_plus.svg" alt=""><img class="btnBenef hideOn" src="assets/iconsOn/button_minus.svg" alt="">
+                      <p class="subtitleOn hide-md hide-lg">Plan de Salud que bonifica <span>SIN TOPE todo el evento hospitalario o la atención ambulatoria, incluyendo la atención de urgencia</span>, en una completa red con las principales clínicas de Santiago.</p>
+                    </div>
+                  </div>
+                  <div class="coberturaMaternidad stepFlujoOn_desk stepFlujoOn_mobile">
+                    <p class="subtitleOn hide-sm">Plan de Salud que bonifica <span>SIN TOPE todo el evento hospitalario o la atención ambulatoria, incluyendo la atención de urgencia</span>, en una completa red con las principales clínicas de Santiago.</p>
+                    <h4>Selecciona las coberturas que quieres para armar tu plan</h4>
+                    <h3 class="titleOn">¿Quieres tener cobertura de Maternidad?</h3>
+                    <div class="buttonsAreaOn">
+                      <label class="checkBtn">
+                        <input class="coberturaParto" type="radio" name="coberturaParto" onclick="checkMobile(this)" id="conParto"><span class="checkmark"></span><img src="assets/iconsOn/icon_cobertura-parto.svg" alt="">
+                        <p><span>Con cobertura de Parto</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu massa justo. Duis metus tellus.</p>
+                      </label>
+                      <label class="checkBtn">
+                        <input class="coberturaParto" type="radio" name="coberturaParto" onclick="checkMobile(this)" id="sinParto"><span class="checkmark"></span><img src="assets/iconsOn/icon_cobertura-sinparto.svg" alt="">
+                        <p><span>Sin cobertura de Parto</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu massa justo.</p>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="hideOn coberturaHospitalizacion stepFlujoOn_desk stepFlujoOn_mobile">
+                    <h3 class="titleOn">¿Hasta qué porcentaje quiero que me bonifiquen en caso de una hospitalización?</h3>
+                    <h4 class="subtitleOn hide-sm">Porcentaje de bonificación sobre hospitalización en las clínicas de la red, sin tope</h4>
+                    <div class="atencionBox skinny hide-md hide-lg animated pulse"><img src="assets/iconsOn/icon_bulb.svg">
+                      <p>Revisa y <span>selecciona</span> el tipo de bonificación de hospitalización, para avanzar.</p>
+                    </div>
+                    <div class="artboardOn hide-sm-hosp">
+                      <table class="table table_planOn">
+                        <thead>
+                          <tr>
+                            <th scope="col">Red de Clínicas</th>		      
+                            <th scope="col"></th>		      
+                            <th scope="col"></th>		      
+                            <th scope="col"></th>
+                          </tr>
+                        </thead>		  
+                        <tbody>
+                          <!-- 1-->
+                          <tr>
+                            <td scope="row">Clínica Alemana de Santiago</td>		      
+                            <td>
+                              <div class="box-nivel bg-aquamarine"></div>
+                            </td>		      
+                            <td>
+                              <div class="box-nivel bg-purple"></div>
+                            </td>		      
+                            <td>
+                              <div class="box-nivel bg-limon"></div>
+                            </td>
+                          </tr>
+                          <!-- 2-->
+                          <tr>
+                            <td scope="row">Clínica Univ. de Los Andes</td>		      
+                            <td>
+                              <div class="box-nivel bg-aquamarine"></div>
+                            </td>		      
+                            <td>
+                              <div class="box-nivel bg-purple"></div>
+                            </td>		      
+                            <td>
+                              <div class="box-nivel bg-limon"></div>
+                            </td>
+                          </tr>
+                          <!-- 3-->
+                          <tr>
+                            <td scope="row">Clínica U.C. San Carlos</td>		      
+                            <td>
+                              <div class="box-nivel bg-aquamarine"></div>
+                            </td>		      
+                            <td>
+                              <div class="box-nivel bg-purple"></div>
+                            </td>		      
+                            <td>
+                              <div class="box-nivel bg-limon"></div>
+                            </td>
+                          </tr>
+                          <!-- 4-->
+                          <tr>
+                            <td scope="row">Clínica U.C. San Carlos</td>		      
+                            <td>
+                              <div class="box-nivel bg-aquamarine"></div>
+                            </td>		      
+                            <td>
+                              <div class="box-nivel bg-purple"></div>
+                            </td>		      
+                            <td>
+                              <div class="box-nivel bg-limon"></div>
+                            </td>
+                          </tr>
+                          <!-- 5-->
+                          <tr>
+                            <td scope="row">Clínica Santa María</td>		      
+                            <td>
+                              <div class="box-nivel bg-aquamarine"></div>
+                            </td>		      
+                            <td>
+                              <div class="box-nivel bg-aquamarine"></div>
+                            </td>		      
+                            <td>
+                              <div class="box-nivel bg-purple"></div>
+                            </td>
+                          </tr>
+                          <!-- 6-->
+                          <tr>
+                            <td scope="row">Hospital CI.Univ. Católica</td>		      
+                            <td>
+                              <div class="box-nivel bg-aquamarine"></div>
+                            </td>		      
+                            <td>
+                              <div class="box-nivel bg-aquamarine"></div>
+                            </td>		      
+                            <td>
+                              <div class="box-nivel bg-purple"></div>
+                            </td>
+                          </tr>
+                          <!-- 7-->
+                          <tr>
+                            <td scope="row">Clínica Indisa</td>		      
+                            <td>
+                              <div class="box-nivel bg-aquamarine"></div>
+                            </td>		      
+                            <td>
+                              <div class="box-nivel bg-aquamarine"></div>
+                            </td>		      
+                            <td>
+                              <div class="box-nivel bg-purple"></div>
+                            </td>
+                          </tr>
+                          <!-- 8-->
+                          <tr>
+                            <td scope="row">Clínica R.S. Vitacura</td>		      
+                            <td>
+                              <div class="box-nivel bg-orange"></div>
+                            </td>		      
+                            <td>
+                              <div class="box-nivel bg-aquamarine"></div>
+                            </td>		      
+                            <td>
+                              <div class="box-nivel bg-aquamarine"></div>
+                            </td>
+                          </tr>
+                          <!-- 9-->
+                          <tr>
+                            <td scope="row">Clínica Bupa Santiago</td>		      
+                            <td>
+                              <div class="box-nivel bg-orange"></div>
+                            </td>		      
+                            <td>
+                              <div class="box-nivel bg-aquamarine"></div>
+                            </td>		      
+                            <td>
+                              <div class="box-nivel bg-aquamarine"></div>
+                            </td>
+                          </tr>
+                          <!-- 10-->
+                          <tr>
+                            <td scope="row">Clínica R.S. Santiago</td>		      
+                            <td>
+                              <div class="box-nivel bg-orange"></div>
+                            </td>		      
+                            <td>
+                              <div class="box-nivel bg-aquamarine"></div>
+                            </td>		      
+                            <td>
+                              <div class="box-nivel bg-aquamarine"></div>
+                            </td>
+                          </tr>
+                          <!-- 11-->
+                          <tr>
+                            <td scope="row">Clínica R.S. Providencia</td>		      
+                            <td>
+                              <div class="box-nivel bg-orange"></div>
+                            </td>		      
+                            <td>
+                              <div class="box-nivel bg-aquamarine"></div>
+                            </td>		      
+                            <td>
+                              <div class="box-nivel bg-aquamarine"></div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class="box-modalOn" data-toggle="modal" data-target="#modalHospitalario"><img src="./assets/iconsOn/icon_tooltip.png" alt=""><a href="#" data-toggle="modal" data-target="#modalHospitalario">¿Qué eventos hospitalarios me bonifican?		</a></div>
+                      <div class="moduleMaskOn">
+                        <div class="mask-box">
+                          <div class="mask-box__porcentajes mask-box__porcentajes-four">
+                            <p class="mask-box__porcentajes__nro">70%</p>					
+                            <p class="mask-box__porcentajes__txt">de bonificación sobre hospitalización</p>
+                          </div>				
+                          <div class="mask-box__porcentajes mask-box__porcentajes-three">
+                            <p class="mask-box__porcentajes__nro">80%</p>					
+                            <p class="mask-box__porcentajes__txt">de bonificación sobre hospitalización</p>
+                          </div>				
+                          <div class="mask-box__porcentajes mask-box__porcentajes-four">
+                            <p class="mask-box__porcentajes__nro">90%</p>					
+                            <p class="mask-box__porcentajes__txt">de bonificación sobre hospitalización</p>
+                          </div>
+                          <div class="mask-box__tipoBonificacion">
+                            <p class="mask-box__tipoBonificacion-txt">Hospitalario Full</p>
+                          </div>	 	
+                          <div class="mask-box__radioButton">
+                            <div class="customRadioButtonOn">
+                              <input id="maskBox1" type="radio" name="maskBox" onclick="nextNav2(this)">
+                              <label for="maskBox1"></label>
+                            </div>
+                          </div>
+                        </div>			
+                        <div class="mask-box">
+                          <div class="mask-box__porcentajes mask-box__porcentajes-four">
+                            <p class="mask-box__porcentajes__nro">80%</p>					
+                            <p class="mask-box__porcentajes__txt">de bonificación sobre hospitalización</p>
+                          </div>				
+                          <div class="mask-box__porcentajes mask-box__porcentajes-seven">
+                            <p class="mask-box__porcentajes__nro">90%</p>					
+                            <p class="mask-box__porcentajes__txt">de bonificación sobre hospitalización</p>
+                          </div>				
+                          <div class="mask-box__tipoBonificacion">
+                            <p class="mask-box__tipoBonificacion-txt">Hospitalario Medium</p>
+                          </div>
+                          <div class="mask-box__radioButton">
+                            <div class="customRadioButtonOn">
+                              <input id="maskBox2" type="radio" name="maskBox" onclick="nextNav2(this)">
+                              <label for="maskBox2"></label>
+                            </div>
+                          </div>
+                        </div>			
+                        <div class="mask-box">
+                          <div class="mask-box__porcentajes mask-box__porcentajes-seven">
+                            <p class="mask-box__porcentajes__nro">90%</p>					
+                            <p class="mask-box__porcentajes__txt">de bonificación sobre hospitalización</p>
+                          </div>				
+                          <div class="mask-box__porcentajes mask-box__porcentajes-four">
+                            <p class="mask-box__porcentajes__nro">100%</p>					
+                            <p class="mask-box__porcentajes__txt">de bonificación sobre hospitalización</p>
+                          </div>		
+                          <div class="mask-box__tipoBonificacion">
+                            <p class="mask-box__tipoBonificacion-txt">Hospitalario Light</p>
+                          </div>
+                          <div class="mask-box__radioButton">
+                            <div class="customRadioButtonOn">
+                              <input id="maskBox3" type="radio" name="maskBox" onclick="nextNav2(this)">
+                              <label for="maskBox3"></label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="artboardOn__movile hide-lg-hosp">
+                      <ul class="nav nav-tabs" id="HospitalarioMovile" role="tablist">
+                        <li class="nav-item"><a class="nav-link active" id="hospitalarioFullTab" data-toggle="tab" href="#hospitalarioFull" role="tab" aria-controls="home" aria-selected="true">Full</a></li>  
+                        <li class="nav-item"><a class="nav-link" id="hospitalarioMedioTab" data-toggle="tab" href="#hospitalarioMedio" role="tab" aria-controls="profile" aria-selected="false">Medium</a></li>  
+                        <li class="nav-item"><a class="nav-link" id="hospitalarioLightTab" data-toggle="tab" href="#hospitalarioLight" role="tab" aria-controls="contact" aria-selected="false">Light</a></li>
+                      </ul>
+                      <div class="tab-content" id="myTabContent">
+                        <div class="TabPaneOn tab-pane fade show active" id="hospitalarioFull" role="tabpanel" aria-labelledby="hospitalarioFullTab">
+                          <table class="table table_planOn table_planOn__movile">
+                            <thead>
+                              <tr>
+                                <th scope="col">Red de Clínicas</th>		      
+                                <th scope="col"><span class="txtOn">% Bonificación</span> <span class="astkOn">*</span></th>
+                              </tr>
+                            </thead>		  
+                            <tbody>
+                              <!-- 1-->
+                              <tr>
+                                <td scope="row">Clínica Alemana de Santiago</td>		      
+                                <td>
+                                  <div class="box-nivel bg-aquamarine"></div>
+                                </td>		      
+                              </tr>
+                              <!-- 2-->
+                              <tr>
+                                <td scope="row">Clínica Univ. de Los Andes</td>		      
+                                <td>
+                                  <div class="box-nivel bg-aquamarine"></div>
+                                </td>		      
+                              </tr>
+                              <!-- 3-->
+                              <tr>
+                                <td scope="row">Clínica U.C. San Carlos</td>		      
+                                <td>
+                                  <div class="box-nivel bg-aquamarine"></div>
+                                </td>		      
+                              </tr>
+                              <!-- 4-->
+                              <tr>
+                                <td scope="row">Clínica U.C. San Carlos</td>		      
+                                <td>
+                                  <div class="box-nivel bg-aquamarine"></div>
+                                </td>		      
+                              </tr>
+                              <!-- 5-->
+                              <tr>
+                                <td scope="row">Clínica Santa María</td>		      
+                                <td>
+                                  <div class="box-nivel bg-aquamarine"></div>
+                                </td>		      
+                              </tr>
+                              <!-- 6-->
+                              <tr>
+                                <td scope="row">Hospital CI.Univ. Católica</td>		      
+                                <td>
+                                  <div class="box-nivel bg-aquamarine"></div>
+                                </td>		      
+                              </tr>
+                              <!-- 7-->
+                              <tr>
+                                <td scope="row">Clínica Indisa</td>		      
+                                <td>
+                                  <div class="box-nivel bg-aquamarine"></div>
+                                </td>		      
+                              </tr>
+                              <!-- 8-->
+                              <tr>
+                                <td scope="row">Clínica R.S. Vitacura</td>		      
+                                <td>
+                                  <div class="box-nivel bg-orange"></div>
+                                </td>		      
+                              </tr>
+                              <!-- 9-->
+                              <tr>
+                                <td scope="row">Clínica Bupa Santiago</td>		      
+                                <td>
+                                  <div class="box-nivel bg-orange"></div>
+                                </td>		      
+                              </tr>
+                              <!-- 10-->
+                              <tr>
+                                <td scope="row">Clínica R.S. Santiago</td>		      
+                                <td>
+                                  <div class="box-nivel bg-orange"></div>
+                                </td>		      
+                              </tr>
+                              <!-- 11-->
+                              <tr>
+                                <td scope="row">Clínica R.S. Providencia</td>		      
+                                <td>
+                                  <div class="box-nivel bg-orange"></div>
+                                </td>		      
+                              </tr>
+                            </tbody>
+                          </table>
+                          <div class="moduleMaskOn moduleMaskOn__movile">
+                            <div class="nav-arrow-area"><img class="prev-view toHosLight" src="./assets/icons/icon-arrow-left.svg" alt=""><img class="next-view toHosMd" src="./assets/icons/icon-arrow-right.svg" alt=""></div>
+                            <div class="title-header-table">
+                              <h3>Hospitalario Full</h3>
+                            </div>
+                            <div class="mask-box mask-box__hospitalaria">
+                              <div class="mask-box__porcentajes mask-box__porcentajes-seven">
+                                <p class="mask-box__porcentajes__nro">90%</p>					
+                                <p class="mask-box__porcentajes__txt">de bonificación sobre hospitalización</p>
+                              </div>				
+                              <div class="mask-box__porcentajes mask-box__porcentajes-four">
+                                <p class="mask-box__porcentajes__nro">100%</p>					
+                                <p class="mask-box__porcentajes__txt">de bonificación sobre hospitalización</p>
+                              </div>		
+                              <div class="mask-box__tipoBonificacion">
+                                <p class="mask-box__tipoBonificacion-txt">Hospitalario Full</p>
+                              </div>	 	
+                              <div class="mask-box__radioButton">
+                                <div class="customRadioButtonOn customRadioButtonOn__movile">
+                                  <input class="hosCheck" id="maskBox1_movile" type="radio" name="maskBox_movile" onclick="nextTest(this)">
+                                  <label for="maskBox1_movile"></label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="TabPaneOn tab-pane fade" id="hospitalarioMedio" role="tabpanel" aria-labelledby="hospitalarioMedioTab">
+                          <table class="table table_planOn table_planOn__movile">
+                            <thead>
+                              <tr>
+                                <th scope="col">Red de Clínicas</th>		      
+                                <th scope="col"><span class="txtOn">% Bonificación</span> <span class="astkOn">*</span></th>
+                              </tr>
+                            </thead>		  
+                            <tbody>
+                              <!-- 1-->
+                              <tr>
+                                <td scope="row">Clínica Alemana de Santiago</td>		      
+                                <td>
+                                  <div class="box-nivel bg-aquamarine"></div>
+                                </td>		      
+                              </tr>
+                              <!-- 2-->
+                              <tr>
+                                <td scope="row">Clínica Univ. de Los Andes</td>		      
+                                <td>
+                                  <div class="box-nivel bg-aquamarine"></div>
+                                </td>		      
+                              </tr>
+                              <!-- 3-->
+                              <tr>
+                                <td scope="row">Clínica U.C. San Carlos</td>		      
+                                <td>
+                                  <div class="box-nivel bg-aquamarine"></div>
+                                </td>		      
+                              </tr>
+                              <!-- 4-->
+                              <tr>
+                                <td scope="row">Clínica U.C. San Carlos</td>		      
+                                <td>
+                                  <div class="box-nivel bg-aquamarine"></div>
+                                </td>		      
+                              </tr>
+                              <!-- 5-->
+                              <tr>
+                                <td scope="row">Clínica Santa María</td>		      
+                                <td>
+                                  <div class="box-nivel bg-aquamarine"></div>
+                                </td>		      
+                              </tr>
+                              <!-- 6-->
+                              <tr>
+                                <td scope="row">Hospital CI.Univ. Católica</td>		      
+                                <td>
+                                  <div class="box-nivel bg-aquamarine"></div>
+                                </td>		      
+                              </tr>
+                              <!-- 7-->
+                              <tr>
+                                <td scope="row">Clínica Indisa</td>		      
+                                <td>
+                                  <div class="box-nivel bg-aquamarine"></div>
+                                </td>		      
+                              </tr>
+                              <!-- 8-->
+                              <tr>
+                                <td scope="row">Clínica R.S. Vitacura</td>		      
+                                <td>
+                                  <div class="box-nivel bg-orange"></div>
+                                </td>		      
+                              </tr>
+                              <!-- 9-->
+                              <tr>
+                                <td scope="row">Clínica Bupa Santiago</td>		      
+                                <td>
+                                  <div class="box-nivel bg-orange"></div>
+                                </td>		      
+                              </tr>
+                              <!-- 10-->
+                              <tr>
+                                <td scope="row">Clínica R.S. Santiago</td>		      
+                                <td>
+                                  <div class="box-nivel bg-orange"></div>
+                                </td>		      
+                              </tr>
+                              <!-- 11-->
+                              <tr>
+                                <td scope="row">Clínica R.S. Providencia</td>		      
+                                <td>
+                                  <div class="box-nivel bg-orange"></div>
+                                </td>		      
+                              </tr>
+                            </tbody>
+                          </table>
+                          <div class="moduleMaskOn moduleMaskOn__movile">
+                            <div class="nav-arrow-area"><img class="prev-view toHosFull" src="./assets/icons/icon-arrow-left.svg" alt=""><img class="next-view toHosLight" src="./assets/icons/icon-arrow-right.svg" alt=""></div>
+                            <div class="title-header-table">
+                              <h3>Hospitalario Medium</h3>
+                            </div>
+                            <div class="mask-box mask-box__hospitalaria">
+                              <div class="mask-box__porcentajes mask-box__porcentajes-seven">
+                                <p class="mask-box__porcentajes__nro">80%</p>					
+                                <p class="mask-box__porcentajes__txt">de bonificación sobre hospitalización</p>
+                              </div>				
+                              <div class="mask-box__porcentajes mask-box__porcentajes-four">
+                                <p class="mask-box__porcentajes__nro">90%</p>					
+                                <p class="mask-box__porcentajes__txt">de bonificación sobre hospitalización</p>
+                              </div> 
+                              <div class="mask-box__tipoBonificacion">
+                                <p class="mask-box__tipoBonificacion-txt">Hospitalario Medium</p>
+                              </div>	 	
+                              <div class="mask-box__radioButton">
+                                <div class="customRadioButtonOn customRadioButtonOn__movile">
+                                  <input class="hosCheck" id="maskBox2_movile" type="radio" name="maskBox_movile" onclick="nextTest(this)">
+                                  <label for="maskBox2_movile"></label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="TabPaneOn tab-pane fade" id="hospitalarioLight" role="tabpanel" aria-labelledby="hospitalarioLightTab">
+                          <table class="table table_planOn table_planOn__movile">
+                            <thead>
+                              <tr>
+                                <th scope="col">Red de Clínicas</th>		      
+                                <th scope="col"><span class="txtOn">% Bonificación</span> <span class="astkOn">*</span></th>
+                              </tr>
+                            </thead>		  
+                            <tbody>
+                              <!-- 1-->
+                              <tr>
+                                <td scope="row">Clínica Alemana de Santiago</td>		      
+                                <td>
+                                  <div class="box-nivel bg-limon"></div>
+                                </td>		      
+                              </tr>
+                              <!-- 2-->
+                              <tr>
+                                <td scope="row">Clínica Univ. de Los Andes</td>		      
+                                <td>
+                                  <div class="box-nivel bg-limon"></div>
+                                </td>		      
+                              </tr>
+                              <!-- 3-->
+                              <tr>
+                                <td scope="row">Clínica U.C. San Carlos</td>		      
+                                <td>
+                                  <div class="box-nivel bg-limon"></div>
+                                </td>		      
+                              </tr>
+                              <!-- 4-->
+                              <tr>
+                                <td scope="row">Clínica U.C. San Carlos</td>		      
+                                <td>
+                                  <div class="box-nivel bg-purple"></div>
+                                </td>		      
+                              </tr>
+                              <!-- 5-->
+                              <tr>
+                                <td scope="row">Clínica Santa María</td>		      
+                                <td>
+                                  <div class="box-nivel bg-purple"></div>
+                                </td>		      
+                              </tr>
+                              <!-- 6-->
+                              <tr>
+                                <td scope="row">Hospital CI.Univ. Católica</td>		      
+                                <td>
+                                  <div class="box-nivel bg-purple"></div>
+                                </td>		      
+                              </tr>
+                              <!-- 7-->
+                              <tr>
+                                <td scope="row">Clínica Indisa</td>		      
+                                <td>
+                                  <div class="box-nivel bg-purple"></div>
+                                </td>		      
+                              </tr>
+                              <!-- 8-->
+                              <tr>
+                                <td scope="row">Clínica R.S. Vitacura</td>		      
+                                <td>
+                                  <div class="box-nivel bg-aquamarine"></div>
+                                </td>		      
+                              </tr>
+                              <!-- 9-->
+                              <tr>
+                                <td scope="row">Clínica Bupa Santiago</td>		      
+                                <td>
+                                  <div class="box-nivel bg-aquamarine"></div>
+                                </td>		      
+                              </tr>
+                              <!-- 10-->
+                              <tr>
+                                <td scope="row">Clínica R.S. Santiago</td>		      
+                                <td>
+                                  <div class="box-nivel bg-aquamarine"></div>
+                                </td>		      
+                              </tr>
+                              <!-- 11-->
+                              <tr>
+                                <td scope="row">Clínica R.S. Providencia</td>		      
+                                <td>
+                                  <div class="box-nivel bg-aquamarine"></div>
+                                </td>		      
+                              </tr>
+                            </tbody>
+                          </table>
+                          <div class="moduleMaskOn moduleMaskOn__movile">
+                            <div class="nav-arrow-area"><img class="prev-view toHosMd" src="./assets/icons/icon-arrow-left.svg" alt=""><img class="next-view toHosFull" src="./assets/icons/icon-arrow-right.svg" alt=""></div>
+                            <div class="title-header-table">
+                              <h3>Hospitalario Light</h3>
+                            </div>
+                            <div class="mask-box mask-box__hospitalaria">
+                              <div class="mask-box__porcentajes mask-box__porcentajes-three">
+                                <p class="mask-box__porcentajes__nro">70%</p>					
+                                <p class="mask-box__porcentajes__txt">de bonificación sobre hospitalización</p>
+                              </div>				
+                              <div class="mask-box__porcentajes mask-box__porcentajes-four">
+                                <p class="mask-box__porcentajes__nro">80%</p>					
+                                <p class="mask-box__porcentajes__txt">de bonificación sobre hospitalización</p>
+                              </div>				
+                              <div class="mask-box__porcentajes mask-box__porcentajes-four">
+                                <p class="mask-box__porcentajes__nro">90%</p>					
+                                <p class="mask-box__porcentajes__txt">de bonificación sobre hospitalización</p>
+                              </div>
+                              <div class="mask-box__tipoBonificacion">
+                                <p class="mask-box__tipoBonificacion-txt">Hospitalario Light</p>
+                              </div>	 	
+                              <div class="mask-box__radioButton">
+                                <div class="customRadioButtonOn customRadioButtonOn__movile">
+                                  <input class="hosCheck" id="maskBox3_movile" type="radio" name="maskBox_movile" onclick="nextTest(this)">
+                                  <label for="maskBox3_movile"></label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="legalOn"> 
+                        <p>*Porcentaje de bonificación sobre hospitalización en las clínicas de la red, sin tope </p>
+                      </div>
+                      <div class="box-modalOn box-modalOn__movile" data-toggle="modal" data-target="#modalAmbulatorio"><img src="./assets/iconsOn/icon_tooltip.png" alt=""><a href="#" data-toggle="modal" data-target="#modalAmbulatorio">¿Qué eventos hospitalarios me bonifican?         </a></div>
+                    </div>
+                  </div>
+                  <div class="hideOn coberturaAmbulatoria stepFlujoOn_desk stepFlujoOn_mobile">
+                    <h3 class="titleOn">¿Cómo quieres que sea tu cobertura ambulatoria?</h3>
+                    <div class="atencionBox skinny hide-md hide-lg animated pulse"><img src="assets/iconsOn/icon_bulb.svg">
+                      <p>Revisa y <span>selecciona</span> el tipo de bonificación ambulatoria que prefieres, para avanzar.</p>
+                    </div>
+                    <div class="artboardOn artboardOn__md hide-sm hide-md">
+                      <table class="table table_planOn table_planOn-ambulatoria">
+                        <thead>
+                          <tr>
+                            <th scope="col">Red de Clínicas</th>		      
+                            <th scope="col"></th>		      
+                            <th scope="col"></th>		      
+                            <th scope="col"></th>
+                          </tr>
+                        </thead>		  
+                        <tbody>
+                          <!-- 1-->
+                          <tr>
+                            <td scope="row">Clínica Alemana de Santiago</td>		      
+                            <td>
+                              <div class="box-nivel bg-limon"></div>
+                            </td>		      
+                            <td>
+                              <div class="box-nivel bg-creme"></div>
+                            </td>
+                          </tr>
+                          <!-- 2-->
+                          <tr>
+                            <td scope="row">Clínica Univ. de Los Andes</td>		      
+                            <td>
+                              <div class="box-nivel bg-limon"></div>
+                            </td>		      
+                            <td>
+                              <div class="box-nivel bg-creme"></div>
+                            </td>
+                          </tr>
+                          <!-- 3-->
+                          <tr>
+                            <td scope="row">Clínica U.C. San Carlos</td>		      
+                            <td>
+                              <div class="box-nivel bg-limon"></div>
+                            </td>		      
+                            <td>
+                              <div class="box-nivel bg-creme"></div>
+                            </td>
+                          </tr>
+                          <!-- 4-->
+                          <tr>
+                            <td scope="row">Clínica U.C. San Carlos</td>		      
+                            <td>
+                              <div class="box-nivel bg-purple"></div>
+                            </td>		      
+                            <td>
+                              <div class="box-nivel bg-limon"></div>
+                            </td>
+                          </tr>
+                          <!-- 5-->
+                          <tr>
+                            <td scope="row">Clínica Santa María</td>		      
+                            <td>
+                              <div class="box-nivel bg-purple"></div>
+                            </td>		      
+                            <td>
+                              <div class="box-nivel bg-limon"></div>
+                            </td>
+                          </tr>
+                          <!-- 6-->
+                          <tr>
+                            <td scope="row">Hospital CI.Univ. Católica</td>		      
+                            <td>
+                              <div class="box-nivel bg-purple"></div>
+                            </td>		      
+                            <td>
+                              <div class="box-nivel bg-limon"></div>
+                            </td>
+                          </tr>
+                          <!-- 7-->
+                          <tr>
+                            <td scope="row">Clínica Indisa</td>		      
+                            <td>
+                              <div class="box-nivel bg-purple"></div>
+                            </td>		      
+                            <td>
+                              <div class="box-nivel bg-limon"></div>
+                            </td>
+                          </tr>
+                          <!-- 8-->
+                          <tr>
+                            <td scope="row">Clínica R.S. Vitacura</td>		      
+                            <td>
+                              <div class="box-nivel bg-purple"></div>
+                            </td>		      
+                            <td>
+                              <div class="box-nivel bg-limon"></div>
+                            </td>
+                          </tr>
+                          <!-- 9-->
+                          <tr>
+                            <td scope="row">Clínica Bupa Santiago</td>		      
+                            <td>
+                              <div class="box-nivel bg-purple"></div>
+                            </td>		      
+                            <td>
+                              <div class="box-nivel bg-limon"></div>
+                            </td>
+                          </tr>
+                          <!-- 10-->
+                          <tr>
+                            <td scope="row">Clínica R.S. Santiago</td>		      
+                            <td>
+                              <div class="box-nivel bg-purple"></div>
+                            </td>		      
+                            <td>
+                              <div class="box-nivel bg-limon"></div>
+                            </td>
+                          </tr>
+                          <!-- 11-->
+                          <tr>
+                            <td scope="row">Clínica R.S. Providencia</td>		      
+                            <td>
+                              <div class="box-nivel bg-purple"></div>
+                            </td>		      
+                            <td>
+                              <div class="box-nivel bg-limon"></div>
+                            </td>
+                          </tr>
+                          <!-- 12-->
+                          <tr>
+                            <td scope="row">IntegraMédica</td>		      
+                            <td>
+                              <div class="box-nivel bg-purple"></div>
+                            </td>		      
+                            <td>
+                              <div class="box-nivel bg-limon"></div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class="box-modalOn" data-toggle="modal" data-target="#modalAmbulatorio"><img src="./assets/iconsOn/icon_tooltip.png" alt=""><a href="#" data-toggle="modal" data-target="#modalAmbulatorio">¿Qué eventos ambulatorios me bonifican? 		</a></div>
+                      <div class="moduleMaskOn">
+                        <div class="mask-box mask-box__ambulatoria1 safariAmb1">
+                          <div class="mask-box__porcentajes mask-box__porcentajes-three">
+                            <p class="mask-box__porcentajes__nro">60%</p>					
+                            <p class="mask-box__porcentajes__txt">de bonificación sobre atención ambulatoria</p>
+                          </div>				
+                          <div class="mask-box__porcentajes mask-box__porcentajes-eight">
+                            <p class="mask-box__porcentajes__nro">70%</p>					
+                            <p class="mask-box__porcentajes__txt">de bonificación sobre atención ambulatoria</p>
+                          </div>				
+                          <div class="mask-box__tipoBonificacion">
+                            <p class="mask-box__tipoBonificacion-txt">Ambulatorio Light</p>
+                          </div>	 	
+                          <div class="mask-box__radioButton">
+                            <div class="customRadioButtonOn">
+                              <input id="ambuOn1" type="radio" name="ambulatorioOn" onclick="nextNav2(this), removeSpace()">
+                              <label for="ambuOn1"></label>
+                            </div>
+                          </div>
+                        </div>			
+                        <div class="mask-box mask-box__ambulatoria2 safariAmb2">
+                          <div class="mask-box__porcentajes mask-box__porcentajes-three">
+                            <p class="mask-box__porcentajes__nro">70%</p>					
+                            <p class="mask-box__porcentajes__txt">de bonificación sobre atención ambulatoria</p>
+                          </div>				
+                          <div class="mask-box__porcentajes mask-box__porcentajes-eight">
+                            <p class="mask-box__porcentajes__nro">80%</p>					
+                            <p class="mask-box__porcentajes__txt">de bonificación sobre atención ambulatoria</p>
+                          </div>				
+                          <div class="mask-box__tipoBonificacion">
+                            <p class="mask-box__tipoBonificacion-txt">Ambulatorio Full</p>
+                          </div>
+                          <div class="mask-box__radioButton">
+                            <div class="customRadioButtonOn">
+                              <input id="ambuOn2" type="radio" name="ambulatorioOn" onclick="nextNav2(this), removeSpace()">
+                              <label for="ambuOn2"></label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="artboardOn__movile hide-lg">
+                      <ul class="nav nav-tabs" id="ambulatorioMovile" role="tablist">
+                        <li class="nav-item"><a class="nav-link active" id="ambulatorioFullTab" data-toggle="tab" href="#ambulatorioFull" role="tab" aria-controls="home" aria-selected="true">Full</a></li>  
+                        <li class="nav-item"><a class="nav-link" id="ambulatorioLightTab" data-toggle="tab" href="#ambulatorioLight" role="tab" aria-controls="contact" aria-selected="false">Light</a></li>
+                      </ul>
+                      <div class="tab-content" id="myTabContent">
+                        <div class="TabPaneOn tab-pane fade show active" id="ambulatorioFull" role="tabpanel" aria-labelledby="ambulatorioFullTab">
+                          <table class="table table_planOn table_planOn__movile">
+                            <thead>
+                              <tr>
+                                <th scope="col">Red de Clínicas</th>		      
+                                <th scope="col"><span class="txtTabOn">% Bonificación</span> <span class="astkOn">*</span></th>
+                              </tr>
+                            </thead>		  
+                            <tbody>
+                              <!-- 1-->
+                              <tr>
+                                <td scope="row">Clínica Alemana de Santiago</td>		      
+                                <td>
+                                  <div class="box-nivel bg-limon"></div>
+                                </td>		      
+                              </tr>
+                              <!-- 2-->
+                              <tr>
+                                <td scope="row">Clínica Univ. de Los Andes</td>		      
+                                <td>
+                                  <div class="box-nivel bg-limon"></div>
+                                </td>		      
+                              </tr>
+                              <!-- 3-->
+                              <tr>
+                                <td scope="row">Clínica U.C. San Carlos</td>		      
+                                <td>
+                                  <div class="box-nivel bg-limon"></div>
+                                </td>		      
+                              </tr>
+                              <!-- 4-->
+                              <tr>
+                                <td scope="row">Clínica U.C. San Carlos</td>		      
+                                <td>
+                                  <div class="box-nivel bg-purple"></div>
+                                </td>		      
+                              </tr>
+                              <!-- 5-->
+                              <tr>
+                                <td scope="row">Clínica Santa María</td>		      
+                                <td>
+                                  <div class="box-nivel bg-purple"></div>
+                                </td>		      
+                              </tr>
+                              <!-- 6-->
+                              <tr>
+                                <td scope="row">Hospital CI.Univ. Católica</td>		      
+                                <td>
+                                  <div class="box-nivel bg-purple"></div>
+                                </td>		      
+                              </tr>
+                              <!-- 7-->
+                              <tr>
+                                <td scope="row">Clínica Indisa</td>		      
+                                <td>
+                                  <div class="box-nivel bg-purple"></div>
+                                </td>		      
+                              </tr>
+                              <!-- 8-->
+                              <tr>
+                                <td scope="row">Clínica R.S. Vitacura</td>		      
+                                <td>
+                                  <div class="box-nivel bg-purple"></div>
+                                </td>		      
+                              </tr>
+                              <!-- 9-->
+                              <tr>
+                                <td scope="row">Clínica Bupa Santiago</td>		      
+                                <td>
+                                  <div class="box-nivel bg-purple"></div>
+                                </td>		      
+                              </tr>
+                              <!-- 10-->
+                              <tr>
+                                <td scope="row">Clínica R.S. Santiago</td>		      
+                                <td>
+                                  <div class="box-nivel bg-purple"></div>
+                                </td>		      
+                              </tr>
+                              <!-- 11-->
+                              <tr>
+                                <td scope="row">Clínica R.S. Providencia</td>		      
+                                <td>
+                                  <div class="box-nivel bg-purple"></div>
+                                </td>		      
+                              </tr>
+                              <!-- 12-->
+                              <tr>
+                                <td scope="row">IntegraMédica</td>		      
+                                <td>
+                                  <div class="box-nivel bg-purple"></div>
+                                </td>		      
+                              </tr>
+                            </tbody>
+                          </table>
+                          <div class="moduleMaskOn moduleMaskOn__movile">
+                            <div class="nav-arrow-area"><img class="prev-view toAmbLight" src="./assets/icons/icon-arrow-left.svg" alt=""><img class="next-view toAmbLight" src="./assets/icons/icon-arrow-right.svg" alt=""></div>
+                            <div class="title-header-table">
+                              <h3>Ambulatorio Full</h3>
+                            </div>
+                            <div class="mask-box mask-box__ambulatoria">
+                              <div class="mask-box__porcentajes mask-box__porcentajes-three">
+                                <p class="mask-box__porcentajes__nro">70%</p>					
+                                <p class="mask-box__porcentajes__txt">de bonificación sobre atención ambulatoria</p>
+                              </div>				
+                              <div class="mask-box__porcentajes mask-box__porcentajes-nine">
+                                <p class="mask-box__porcentajes__nro">80%</p>					
+                                <p class="mask-box__porcentajes__txt">de bonificación sobre atención ambulatoria</p>
+                              </div>		
+                              <div class="mask-box__tipoBonificacion">
+                                <p class="mask-box__tipoBonificacion-txt">Ambulatorio Full</p>
+                              </div>	 	
+                              <div class="mask-box__radioButton">
+                                <div class="customRadioButtonOn customRadioButtonOn__movile">
+                                  <input class="ambCheck" id="maskBox4_movile" type="radio" name="ambBox_movile" onclick="nextTest(this)">
+                                  <label for="maskBox4_movile"></label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="TabPaneOn tab-pane fade" id="ambulatorioLight" role="tabpanel" aria-labelledby="ambulatorioLightTab">
+                          <table class="table table_planOn table_planOn__movile">
+                            <thead>
+                              <tr>
+                                <th scope="col">Red de Clínicas</th>		      
+                                <th scope="col"><span class="txtOn">% Bonificación</span> <span class="astkOn">*</span></th>
+                              </tr>
+                            </thead>		  
+                            <tbody>
+                              <!-- 1-->
+                              <tr>
+                                <td scope="row">Clínica Alemana de Santiago</td>		      
+                                <td>
+                                  <div class="box-nivel bg-creme"></div>
+                                </td>		      
+                              </tr>
+                              <!-- 2-->
+                              <tr>
+                                <td scope="row">Clínica Univ. de Los Andes</td>		      
+                                <td>
+                                  <div class="box-nivel bg-creme"></div>
+                                </td>		      
+                              </tr>
+                              <!-- 3-->
+                              <tr>
+                                <td scope="row">Clínica U.C. San Carlos</td>		      
+                                <td>
+                                  <div class="box-nivel bg-creme"></div>
+                                </td>		      
+                              </tr>
+                              <!-- 4-->
+                              <tr>
+                                <td scope="row">Clínica U.C. San Carlos</td>		      
+                                <td>
+                                  <div class="box-nivel bg-limon"></div>
+                                </td>		      
+                              </tr>
+                              <!-- 5-->
+                              <tr>
+                                <td scope="row">Clínica Santa María</td>		      
+                                <td>
+                                  <div class="box-nivel bg-limon"></div>
+                                </td>		      
+                              </tr>
+                              <!-- 6-->
+                              <tr>
+                                <td scope="row">Hospital CI.Univ. Católica</td>		      
+                                <td>
+                                  <div class="box-nivel bg-limon"></div>
+                                </td>		      
+                              </tr>
+                              <!-- 7-->
+                              <tr>
+                                <td scope="row">Clínica Indisa</td>		      
+                                <td>
+                                  <div class="box-nivel bg-limon"></div>
+                                </td>		      
+                              </tr>
+                              <!-- 8-->
+                              <tr>
+                                <td scope="row">Clínica R.S. Vitacura</td>		      
+                                <td>
+                                  <div class="box-nivel bg-limon"></div>
+                                </td>		      
+                              </tr>
+                              <!-- 9-->
+                              <tr>
+                                <td scope="row">Clínica Bupa Santiago</td>		      
+                                <td>
+                                  <div class="box-nivel bg-limon"></div>
+                                </td>		      
+                              </tr>
+                              <!-- 10-->
+                              <tr>
+                                <td scope="row">Clínica R.S. Santiago</td>		      
+                                <td>
+                                  <div class="box-nivel bg-limon"></div>
+                                </td>		      
+                              </tr>
+                              <!-- 11-->
+                              <tr>
+                                <td scope="row">Clínica R.S. Providencia</td>		      
+                                <td>
+                                  <div class="box-nivel bg-limon"></div>
+                                </td> 
+                              </tr>
+                              <!-- 12-->
+                              <tr>
+                                <td scope="row">IntegraMédica</td>		      
+                                <td>
+                                  <div class="box-nivel bg-limon"></div>
+                                </td>		    		      
+                              </tr>
+                            </tbody>
+                          </table>
+                          <div class="moduleMaskOn moduleMaskOn__movile">
+                            <div class="nav-arrow-area"><img class="prev-view toAmbFull" src="./assets/icons/icon-arrow-left.svg" alt=""><img class="next-view toAmbFull" src="./assets/icons/icon-arrow-right.svg" alt=""></div>
+                            <div class="title-header-table">
+                              <h3>Ambulatorio Light</h3>
+                            </div>
+                            <div class="mask-box mask-box__ambulatoria">
+                              <div class="mask-box__porcentajes mask-box__porcentajes-three">
+                                <p class="mask-box__porcentajes__nro">60%</p>					
+                                <p class="mask-box__porcentajes__txt">de bonificación sobre atención ambulatoria</p>
+                              </div>				
+                              <div class="mask-box__porcentajes mask-box__porcentajes-nine">
+                                <p class="mask-box__porcentajes__nro">70%</p>					
+                                <p class="mask-box__porcentajes__txt">de bonificación sobre atención ambulatoria</p>
+                              </div> 
+                              <div class="mask-box__tipoBonificacion">
+                                <p class="mask-box__tipoBonificacion-txt">Ambulatorio Light</p>
+                              </div>	 	
+                              <div class="mask-box__radioButton">
+                                <div class="customRadioButtonOn customRadioButtonOn__movile">
+                                  <input class="ambCheck" id="maskBox5_movile" type="radio" name="ambBox_movile" onclick="nextTest(this)">
+                                  <label for="maskBox5_movile"></label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="legalOn"> 
+                        <p>*Porcentaje de bonificación sobre atención ambulatoria en las clínicas de la red, sin tope </p>
+                      </div>
+                      <div class="box-modalOn box-modalOn__movile" data-toggle="modal" data-target="#modalAmbulatorio"><img src="./assets/iconsOn/icon_tooltip.png" alt=""><a href="#" data-toggle="modal" data-target="#modalAmbulatorio">¿Qué eventos ambulatorios me bonifican?         </a></div>
+                    </div>
+                  </div>
+                  <div class="hideOn beneficiarios stepFlujoOn_desk stepFlujoOn_mobile">
+                    <h3 class="titleOn">¿Quieres agregar beneficiarios como cargas a tu plan?</h3>
+                    <p class="subtitleOn hide-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim, massa in pulvinar imperdiet.</p>
+                    <table class="tablabeneficiariosOn">
+                      <thead>
+                        <td>Nombre</td>
+                        <td>Edad</td>
+                        <td>Género</td>
+                        <td>Relación</td>
+                        <td></td>
+                        <td></td>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="hide-sm">Andrea González Palomo</td>
+                          <td class="hide-md hide-lg">Andrea</td>
+                          <td>45</td>
+                          <td class="hide-sm">Femenino</td>
+                          <td class="hide-md hide-lg">Fem.</td>
+                          <td>Cotizante</td>
+                          <td> <img src="assets/iconsOn/icon_edit.svg"></td>
+                          <td> <img src="assets/iconsOn/icon_cancel-grey.svg"></td>
+                        </tr>
+                      </tbody>
+                    </table><a class="addBenef" data-toggle="modal" data-target="#exampleModal">Agregar beneficiario</a>
+                    <div class="enviar">
+                      <!-- <div class="offset-md-4"></div>-->
+                      <div class="contenerFoot"><a class="button button-info"><span>Volver</span></a><a class="button button-primary" href="2.html"><span>Ver resultado</span></a></div>
+                      <div class="spaceMobile hide-md hide-lg"></div>
+                    </div>
+                  </div>
+                  <div class="stepFlujoOn_space hide-sm"></div>
+                  <div class="smoothBorder"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Modal-->
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-md" role="document">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <div id="test-form">
+                    <button class="close" type="button" data-dismiss="modal">×</button>
+                    <div class="title-step">
+                      <h3>Ingresa los datos del beneficiario</h3>
+                    </div>
+                    <form>
+                      <div class="form-row">
+                        <div class="form-group">
+                          <label>Género</label>
+                          <div class="mobile-radio">
+                            <input id="cob-norma" type="radio" name="type-cob">
+                            <label for="cob-norma">Masculino</label>
+                          </div>
+                          <div class="mobile-radio">
+                            <input id="cob-redua" type="radio" name="type-cob">
+                            <label for="cob-redua">Femenino</label>
+                          </div>
+                          <label class="my-1 mr-2 mt-4" for="inputPassword4">Edad</label>
+                          <input class="form-control" id="inputPassword4" type="text">
+                          <label class="my-1 mr-2 mt-4" for="inlineFormCustomSelectPref">Relación</label>
+                          <div class="select-style">
+                            <select id="inlineFormCustomSelectPref">
+                              <option selected="">Selecciona una relación de parentesco</option>
+                              <option value="1">Madre</option>
+                              <option value="2">Padre</option>
+                              <option value="3">Hijo</option>
+                              <option value="4">Hija</option>
+                              <option value="5">Cónyuge</option>
+                              <option value="6">Otro</option>
+                            </select>
+                          </div>
+                          <label class="my-1 mr-2 mt-4" for="inlineFormCustomSelectPref">Tipo de carga <a class="red-tooltip" href="#!" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Tooltip on bottom"><i class="far fa-question-circle"></i></a></label>
+                          <div class="select-style">
+                            <select id="inlineFormCustomSelectPref">
+                              <option selected="">Selecciona un tipo</option>
+                              <option value="1">Legal</option>
+                              <option value="2">Médica</option>
+                              <option value="3">Legal con aporte</option>
+                              <option value="4">Médico con aporte</option>
+                            </select>
+                          </div>
+                          <div class="form-row enviar">
+                            <!-- <div class="offset-md-4"></div>-->
+                            <div class="contenerFoot"><a class="button button-border" href="paso2.html"><span>Guardar beneficiario</span></a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Modal Hospitalario-->
+          <div class="modalOn modal fade" id="modalHospitalario" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <button class="close" type="button" data-dismiss="modal">×</button>
+                  <h3>Eventos Hospitalarios</h3>
+                  <ul> 
+                    <li>Día cama</li>
+                    <li>Día cama cuidados intensivos o coronarios</li>
+                    <li>Día cama cuidados intermedios</li>
+                    <li>Día cama sala cuna - fototerapia</li>
+                    <li>Día cama observación - recuperación</li>
+                    <li>Derecho de pabellón</li>
+                    <li>Exámenes de laboratorio</li>
+                    <li>Exámenes de histopatología</li>
+                    <li>Imagenología (Rayos; Scanner; Ecotomografía)</li>
+                    <li>Imagenología (Resonancia Nuclear Magnética)</li>
+                    <li>Kinesiología y fisioterapia</li>
+                  </ul>
+                  <div class="center"><a class="button button-primary" href="javascript:void(0)" data-dismiss="modal" aria-label="Close">Cerrar</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Modal Ambulario-->
+          <div class="modalOn modal fade" id="modalAmbulatorio" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <button class="close" type="button" data-dismiss="modal">×</button>
+                  <h3>Eventos Ambulatorios</h3>
+                  <ul> 
+                    <li>Consulta médica</li>
+                    <li>Consulta oftalmológica</li>
+                    <li>Exámenes de laboratorio</li>
+                    <li>Exámenes de histopatología</li>
+                    <li>Imagenología (Rayos; Scanner; Ecotomografía)</li>
+                    <li>Pabellón ambulatorio (1.d)</li>
+                    <li>Procedimientos (1.c)</li>
+                    <li>Honorarios médicos quirúrgicos (1.d)</li>
+                    <li>Imagenología (Resonancia nuclear magnética)</li>
+                  </ul>
+                  <div class="center"><a class="button button-primary" href="javascript:void(0)" data-dismiss="modal" aria-label="Close">Cerrar</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Modal Contacto-->
+          <div class="modalOn modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-md" role="document">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <div id="test-form-contact">
+                    <button class="close" type="button" data-dismiss="modal">×</button>
+                    <div id="Div1">
+                      <div class="title-step">
+                        <h3>Quiero que me contacten</h3>
+                        <p>Al ingresar tu número teléfonico, un ejecutivo se contactará contigo para explicarte todas las dudas que tengas</p>
+                      </div>
+                      <form>
+                        <div class="form-row">
+                          <div class="form-group">
+                            <label class="my-1 mr-2 mt-1" for="inputPassword4">Nombre</label>
+                            <input class="form-control" id="inputPassword4" type="text" value="Esteban">
+                            <label class="my-1 mr-2 mt-1" for="inputPassword4">Apellido</label>
+                            <input class="form-control" id="inputPassword4" type="text" value="Caceres">
+                            <label class="my-1 mr-2 mt-4" for="inputPassword4">Correo electrónico</label>
+                            <input class="form-control" id="inputPassword4" type="text" value="esteban@gmail.com">
+                            <label class="my-1 mr-2 mt-4" for="inputPassword4">Rut</label>
+                            <input class="form-control" id="inputPassword4" type="text">
+                            <label class="my-1 mr-2 mt-1 pl-1" for="inlineFormCustomSelectPref">Teléfono</label>
+                            <div class="tel">
+                              <div class="row">
+                                <div class="col-md-4">
+                                  <div class="select-style telefono">
+                                    <select id="inlineFormCustomSelectPref">
+                                      <option selected="">Celular</option>
+                                      <option value="1">...</option>
+                                      <option value="2">...</option>
+                                      <option value="3">...</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <div class="col-8">
+                                  <input class="form-control inputTelefono" type="tel" name="phone" value="" size="4" maxlength="4" required="required" title="">
+                                </div>
+                              </div>
+                            </div>
+                            <label class="my-1 mr-2 mt-1 pl-1" for="inlineFormCustomSelectPref">Quiero que me llamen:</label>
+                            <div class="select-style">
+                              <select id="inlineFormCustomSelectPref">
+                                <option selected="">Hoy, dentro de 1 hora</option>
+                                <option value="1">Hoy, al final del día</option>
+                                <option value="2">Mañana, dentro del día</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-row send"><a class="button button-warning ejecutivo" href="#!" onclick="switchVisible();"><span>Solicitar Ejecutivo</span></a></div>
+                        </div>
+                      </form>
+                    </div>
+                    <div id="Div2"><img src="./assets/img/icon-ejecutive.svg">
+                      <div class="title-step">
+                        <h3>Un ejecutivo te contactará dentro de 1 hora, al teléfono:</h3>
+                        <h1>+569 123 45 67</h1>
+                      </div>
+                      <form>
+                        <div>
+                          <div class="form-row send"><a class="button button-border pasoExtra" href="#!"><span>Confirmar</span></a><a class="button button-info" href="#!"><span>Cancelar</span></a></div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Optional JavaScript-->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    <!--Funciones CruzBlancaOn-->
+    <script src="js/funcionesOn.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+      $("a").tooltip();
+      });
+      // Popup
+      $(document).ready(function() {
+      $('.popup-with-form').magnificPopup({
+      type: 'inline',
+      preloader: false,
+      focus: '#name',
+      // When elemened is focused, some mobile browsers in some cases zoom in
+      // It looks not nice, so we disable it:
+      callbacks: {
+      beforeOpen: function() {
+      if ($(window).width() < 700) {
+      this.st.focus = false;
+      } else {
+      this.st.focus = '#name';
+      }
+      }
+      }
+      });
+      });
+      function switchVisible() {
+      if (document.getElementById('Div1')) {
+      if (document.getElementById('Div1').style.display == 'none') {
+      document.getElementById('Div1').style.display = 'block';
+      document.getElementById('Div2').style.display = 'none';
+      } else {
+      document.getElementById('Div1').style.display = 'none';
+      document.getElementById('Div2').style.display = 'block';
+      console.log("algo");
+      }
+      }
+      }
+      //Mostrar clinicas
+      $(function() {
+      // $('.clinicas').hide();
+      $("input[name=clinic]:radio").click(function() {
+      if ($('input[name=clinic]:checked').val() == "ClinicasSi") {
+      $('.clinicas').show();
+      $(".clinicas #inlineFormCustomSelectPref").prop('disabled', false);
+      $('.clinicas div').removeClass("hidden-xs");
+      $('.clinicas label').removeClass("hidden-xs");
+      $('.clinicas select').append('<style>.select-style:after, .filter-group:after{border-top: 6px solid #0077c6 !important;}</style>');
+      } else if ($('input[name=clinic]:checked').val() == "ClinicasNo") {
+      $(".clinicas #inlineFormCustomSelectPref").prop('disabled', true);
+      $('.clinicas div').addClass("hidden-xs");
+      $('.clinicas label').addClass("hidden-xs");
+      $('.clinicas select').append('<style>.select-style:after, .filter-group:after{border-top: 6px solid #827d7d !important;}</style>');
+      }
+      });
+      });
+    </script>
+  </body>
+</html>
